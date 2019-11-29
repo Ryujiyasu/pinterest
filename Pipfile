@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+name = "pypi"
+verify_ssl = true
+
+[dev-packages]
+"flake8" = "*"
+qrcode = "*"
+
+[packages]
+django = ">=1.11,<1.12"
+pillow = "*"
+requests = "*"
+django-taggit = "*"
+django-braces = "*"
+django-compressor = "*"
+mock = "*"
+gunicorn = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+coreapi = "*"
+psycopg2-binary = "*"
