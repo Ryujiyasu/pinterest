@@ -88,6 +88,11 @@ class Pin(models.Model):
         return '%s - %s' % (self.submitter, self.published)
 
 
+class Evaluation(models.Model):
+    name=models.CharField(max_length=30)
+    trust=models.IntegerField(default=0)
+
+
 @receiver(models.signals.post_delete, sender=Pin)
 def delete_pin_images(sender, instance, **kwargs):
     try:
